@@ -3,9 +3,7 @@
 [resource]
 transparency = 1
 albedo_color = Color(1, 0.25882354, 0.19215687, 0.49803922)
-metallic = 0.2
-roughness = 0.2
+roughness = 0.25
 rim_enabled = true
-refraction_enabled = true
 refraction_scale = 0.02
 stencil_flags = 2

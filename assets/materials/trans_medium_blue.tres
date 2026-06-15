@@ -1,0 +1,7 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://dv0bv1irsegrr"]
+
+[resource]
+transparency = 1
+albedo_color = Color(0.4627451, 0.6392157, 0.78431374, 0.49803922)
+roughness = 0.25
+stencil_flags = 2

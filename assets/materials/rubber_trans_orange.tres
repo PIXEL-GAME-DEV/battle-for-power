@@ -1,0 +1,12 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://874sawhbm80v"]
+
+[resource]
+albedo_color = Color(0.9137255, 0.43529412, 0.003921569, 1)
+roughness = 0.9
+rim_enabled = true
+subsurf_scatter_enabled = true
+subsurf_scatter_strength = 1.0
+subsurf_scatter_transmittance_enabled = true
+subsurf_scatter_transmittance_boost = 1.0
+refraction_scale = 0.02
+stencil_flags = 2
