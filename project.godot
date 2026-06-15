@@ -14,6 +14,14 @@ config/name="Battle for power"
 config/features=PackedStringArray("4.6", "Forward Plus")
 config/icon="res://assets/icon.svg"
 
+[autoload]
+
+MultiplayerInput="*uid://bggkri7rfpuft"
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/multiplayer_input/plugin.cfg")
+
 [physics]
 
 3d/physics_engine="Jolt Physics"
@@ -21,3 +29,5 @@ config/icon="res://assets/icon.svg"
 [rendering]
 
 rendering_device/driver.windows="d3d12"
+anti_aliasing/quality/msaa_3d=2
+anti_aliasing/quality/use_debanding=true

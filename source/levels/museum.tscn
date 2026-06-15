@@ -1,0 +1,39 @@
+[gd_scene format=3 uid="uid://8j3q300p8gx4"]
+
+[ext_resource type="PackedScene" uid="uid://bpqlbkxe82pq1" path="res://source/objects/tridax_pod.tscn" id="1_cko76"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_yv0si"]
+sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
+ground_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
+
+[sub_resource type="Sky" id="Sky_i6tyk"]
+sky_material = SubResource("ProceduralSkyMaterial_yv0si")
+
+[sub_resource type="Environment" id="Environment_11t87"]
+background_mode = 2
+sky = SubResource("Sky_i6tyk")
+tonemap_mode = 2
+ssao_enabled = true
+ssil_enabled = true
+sdfgi_enabled = true
+glow_enabled = true
+volumetric_fog_enabled = true
+
+[node name="Museum" type="Node3D" unique_id=59399989]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1102694050]
+environment = SubResource("Environment_11t87")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=235687190]
+transform = Transform3D(-0.8660254, -0.43301278, 0.25, 0, 0.49999997, 0.86602545, -0.50000006, 0.75, -0.43301266, 0, 0, 0)
+light_energy = 0.3
+shadow_enabled = true
+
+[node name="CSGBox3D" type="CSGBox3D" parent="." unique_id=1376830304]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1, 0)
+size = Vector3(8, 2, 8)
+
+[node name="TridaxPod" parent="." unique_id=916550285 instance=ExtResource("1_cko76")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.1, 0)
+
+[node name="Camera3D" type="Camera3D" parent="." unique_id=2002590356]
