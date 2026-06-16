@@ -1,0 +1,9 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://dkx7t2k4t283g"]
+
+[ext_resource type="Material" uid="uid://pff037iq3los" path="res://assets/materials/curvature.tres" id="1_8a8ap"]
+
+[resource]
+next_pass = ExtResource("1_8a8ap")
+metallic = 1.0
+roughness = 0.0
+stencil_flags = 2

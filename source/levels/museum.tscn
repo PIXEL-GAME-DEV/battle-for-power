@@ -1,7 +1,5 @@
 [gd_scene format=3 uid="uid://8j3q300p8gx4"]
 
-[ext_resource type="PackedScene" uid="uid://bpqlbkxe82pq1" path="res://source/objects/tridax_pod.tscn" id="1_cko76"]
-
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_yv0si"]
 sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
 ground_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
@@ -12,12 +10,16 @@ sky_material = SubResource("ProceduralSkyMaterial_yv0si")
 [sub_resource type="Environment" id="Environment_11t87"]
 background_mode = 2
 sky = SubResource("Sky_i6tyk")
-tonemap_mode = 2
+tonemap_mode = 4
+ssr_enabled = true
 ssao_enabled = true
 ssil_enabled = true
 sdfgi_enabled = true
+sdfgi_y_scale = 2
 glow_enabled = true
-volumetric_fog_enabled = true
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_lo37y"]
+radius = 0.4
 
 [node name="Museum" type="Node3D" unique_id=59399989]
 
@@ -27,14 +29,27 @@ environment = SubResource("Environment_11t87")
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=235687190]
 transform = Transform3D(-0.8660254, -0.43301278, 0.25, 0, 0.49999997, 0.86602545, -0.50000006, 0.75, -0.43301266, 0, 0, 0)
 light_energy = 0.3
+light_angular_distance = 0.5
 shadow_enabled = true
+directional_shadow_blend_splits = true
+directional_shadow_max_distance = 10.0
 
 [node name="CSGBox3D" type="CSGBox3D" parent="." unique_id=1376830304]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1, 0)
 size = Vector3(8, 2, 8)
 
-[node name="TridaxPod" parent="." unique_id=916550285 instance=ExtResource("1_cko76")]
-transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 0, 0.1, 0)
+[node name="CSGBox3D2" type="CSGBox3D" parent="." unique_id=1054070863]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, -2)
+size = Vector3(1, 2, 1)
 
 [node name="Camera3D" type="Camera3D" parent="." unique_id=2002590356]
-transform = Transform3D(1, 0, 0, 0, 0.90630776, 0.42261827, 0, -0.42261827, 0.90630776, 0, 0.2, 0.2)
+transform = Transform3D(1, 0, 0, 0, 0.8660254, 0.5, 0, -0.5, 0.8660254, 0, 2.0084057, 0.8238176)
+
+[node name="ReflectionProbe" type="ReflectionProbe" parent="." unique_id=1431025149]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.3116209, 0.7069449, 0)
+
+[node name="RigidBody3D" type="RigidBody3D" parent="." unique_id=1998892855]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D" unique_id=828312423]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+shape = SubResource("CapsuleShape3D_lo37y")

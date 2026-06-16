@@ -1,0 +1,10 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://dswqsdpjn81ok"]
+
+[ext_resource type="Material" uid="uid://pff037iq3los" path="res://assets/materials/curvature.tres" id="1_gp3c4"]
+
+[resource]
+next_pass = ExtResource("1_gp3c4")
+albedo_color = Color(0.4, 0.4, 0.3764706, 1)
+metallic = 1.0
+roughness = 0.25
+stencil_flags = 2

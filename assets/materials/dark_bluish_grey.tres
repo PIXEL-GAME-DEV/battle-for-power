@@ -1,6 +1,17 @@
 [gd_resource type="StandardMaterial3D" format=3 uid="uid://lvtp6bvbgo6o"]
 
+[ext_resource type="Texture2D" uid="uid://i7gfehvw217x" path="res://assets/textures/detail_noise.tres" id="1_rx25f"]
+[ext_resource type="Texture2D" uid="uid://ds0ht1yxgwqgu" path="res://assets/textures/normal_noise.tres" id="2_w4ajr"]
+[ext_resource type="Material" uid="uid://pff037iq3los" path="res://assets/materials/curvature.tres" id="3_w4ajr"]
+
 [resource]
+next_pass = ExtResource("3_w4ajr")
 albedo_color = Color(0.34901962, 0.3647059, 0.3764706, 1)
+metallic = 0.25
 roughness = 0.25
+detail_mask = ExtResource("1_rx25f")
+detail_blend_mode = 3
+detail_normal = ExtResource("2_w4ajr")
+uv1_scale = Vector3(0.005, 0.005, 0.005)
+uv1_triplanar = true
 stencil_flags = 2

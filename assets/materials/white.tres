@@ -1,5 +1,6 @@
 [gd_resource type="StandardMaterial3D" format=3 uid="uid://bvahxjpxcc128"]
 
 [resource]
+metallic = 0.25
 roughness = 0.25
 stencil_flags = 2

@@ -1,9 +1,11 @@
 [gd_resource type="StandardMaterial3D" format=3 uid="uid://dl35b7ujq87kk"]
 
+[ext_resource type="Material" uid="uid://pff037iq3los" path="res://assets/materials/curvature.tres" id="1_32wxk"]
+
 [resource]
+next_pass = ExtResource("1_32wxk")
 albedo_color = Color(1, 0.25882354, 0.19215687, 1)
 roughness = 0.9
-rim_enabled = true
 subsurf_scatter_enabled = true
 subsurf_scatter_strength = 1.0
 subsurf_scatter_transmittance_enabled = true
