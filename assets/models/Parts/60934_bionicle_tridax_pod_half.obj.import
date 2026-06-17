@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://c5up54laamiqg"
+path="res://.godot/imported/60934_bionicle_tridax_pod_half.obj-6855daab5af820c817c58b668c9f2bc6.mesh"
+
+[deps]
+
+files=["res://.godot/imported/60934_bionicle_tridax_pod_half.obj-6855daab5af820c817c58b668c9f2bc6.mesh"]
+
+source_file="res://assets/models/Parts/60934_bionicle_tridax_pod_half.obj"
+dest_files=["res://.godot/imported/60934_bionicle_tridax_pod_half.obj-6855daab5af820c817c58b668c9f2bc6.mesh", "res://.godot/imported/60934_bionicle_tridax_pod_half.obj-6855daab5af820c817c58b668c9f2bc6.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false

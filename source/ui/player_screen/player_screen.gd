@@ -3,15 +3,18 @@ extends Control
 
 signal leave
 
+
 var player: int
 var input: DeviceInput
 
+
 @onready var sub_viewport: SubViewport = $RescaleContainer/SubViewportContainer/SubViewport
 @onready var camera_3d: Camera3D = $RescaleContainer/SubViewportContainer/SubViewport/Camera3D
+@onready var label: Label = $Label
 
 
 func _ready():
-	pass
+	label.text = "Player " + "%s" % player
 
 
 func _process(delta: float):
@@ -42,4 +45,4 @@ func init(player_num: int, device: int):
 	# var device = PlayerManager.get_player_device(player)
 	input = DeviceInput.new(device)
 
-	#$Player.text = "%s" % player_num
+	#label.text = "P" + "%s" % player_num

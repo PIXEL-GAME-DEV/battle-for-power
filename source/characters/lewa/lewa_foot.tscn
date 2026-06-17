@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://dcaem73eb2xgi"]
+
+[ext_resource type="Material" uid="uid://c76d5y5h4nfn2" path="res://assets/materials/lime.tres" id="1_ndllp"]
+[ext_resource type="ArrayMesh" uid="uid://cj8ss6tnu3xsa" path="res://assets/models/Parts/60176_technic_axle_connector_2x3_with_ball_joint_socket_closed_sides_angled_forks_with_closed_axle_holes.obj" id="2_fjgox"]
+[ext_resource type="Material" uid="uid://lvtp6bvbgo6o" path="res://assets/materials/dark_bluish_grey.tres" id="3_ual5r"]
+[ext_resource type="ArrayMesh" uid="uid://d1wx8lrhbv7xe" path="res://assets/models/Parts/57569_bionicle_foot_barraki_mantax.obj" id="4_4mxjp"]
+
+[node name="LewaFoot" type="Marker3D" unique_id=1561402278]
+
+[node name="60176TechnicAxleConnector2x3WithBallJointSocketClosedSidesAngledForksWithClosedAxleHoles" type="MeshInstance3D" parent="." unique_id=647589814]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 0, -20, 0)
+material_override = ExtResource("1_ndllp")
+mesh = ExtResource("2_fjgox")
+
+[node name="57569BionicleFootBarrakiMantax" type="MeshInstance3D" parent="." unique_id=1629123397]
+transform = Transform3D(-1, 0, -8.742277e-08, 0, 1, 0, 8.742277e-08, 0, -1, -0.3, -39, 13)
+material_override = ExtResource("3_ual5r")
+mesh = ExtResource("4_4mxjp")

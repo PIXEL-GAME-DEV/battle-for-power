@@ -1,0 +1,26 @@
+[gd_scene format=3 uid="uid://blj1otdj35fop"]
+
+[ext_resource type="Material" uid="uid://c76d5y5h4nfn2" path="res://assets/materials/lime.tres" id="1_1wm0t"]
+[ext_resource type="ArrayMesh" uid="uid://chvq6jxsuxkew" path="res://assets/models/Parts/50898_technic_axle_and_pin_connector_2x7_with_2_ball_joint_sockets_rounded_ends.obj" id="2_gmqd6"]
+[ext_resource type="Material" uid="uid://b8225kq22is04" path="res://assets/materials/black.tres" id="3_4o6gc"]
+[ext_resource type="ArrayMesh" uid="uid://c04w0pllc7bdd" path="res://assets/models/Parts/2780_technic_pin_with_short_friction_ridges.obj" id="4_6i22c"]
+[ext_resource type="Material" uid="uid://lvtp6bvbgo6o" path="res://assets/materials/dark_bluish_grey.tres" id="5_riheu"]
+[ext_resource type="ArrayMesh" uid="uid://yboswknerp1p" path="res://assets/models/Parts/53542_bionicle_toa_inika_thigh_cover.obj" id="6_54a70"]
+
+[node name="LewaLimb" type="Marker3D" unique_id=1082945108]
+gizmo_extents = 100.0
+
+[node name="50898TechnicAxleAndPinConnector2x7With2BallJointSocketsRoundedEnds" type="MeshInstance3D" parent="." unique_id=1469537050]
+transform = Transform3D(-4.371139e-08, 1, -4.371139e-08, 0, -4.371139e-08, -1, -1, -4.371139e-08, 1.9106855e-15, 0, -60, 0)
+material_override = ExtResource("1_1wm0t")
+mesh = ExtResource("2_gmqd6")
+
+[node name="2780TechnicPinWithShortFrictionRidges" type="MeshInstance3D" parent="." unique_id=894893802]
+transform = Transform3D(-4.371139e-08, 1, -4.371139e-08, 0, -4.371139e-08, -1, -1, -4.371139e-08, 1.9106855e-15, 0, -60, 10)
+material_override = ExtResource("3_4o6gc")
+mesh = ExtResource("4_6i22c")
+
+[node name="53542BionicleToaInikaThighCover" type="MeshInstance3D" parent="." unique_id=1749848834]
+transform = Transform3D(1, 0, 0, 0, -4.3711385e-08, -1, 0, 1, -4.3711385e-08, 0, -60, 21.68)
+material_override = ExtResource("5_riheu")
+mesh = ExtResource("6_54a70")

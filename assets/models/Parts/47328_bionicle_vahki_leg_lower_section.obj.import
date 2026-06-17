@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dfi6oa1tw4cs"
+path="res://.godot/imported/47328_bionicle_vahki_leg_lower_section.obj-a03cba8de0c1ef5c7295c439520e2bdc.mesh"
+
+[deps]
+
+files=["res://.godot/imported/47328_bionicle_vahki_leg_lower_section.obj-a03cba8de0c1ef5c7295c439520e2bdc.mesh"]
+
+source_file="res://assets/models/Parts/47328_bionicle_vahki_leg_lower_section.obj"
+dest_files=["res://.godot/imported/47328_bionicle_vahki_leg_lower_section.obj-a03cba8de0c1ef5c7295c439520e2bdc.mesh", "res://.godot/imported/47328_bionicle_vahki_leg_lower_section.obj-a03cba8de0c1ef5c7295c439520e2bdc.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false

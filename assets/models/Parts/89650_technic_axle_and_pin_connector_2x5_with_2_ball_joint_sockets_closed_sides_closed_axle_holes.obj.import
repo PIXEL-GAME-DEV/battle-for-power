@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://b3v7p4rkkpj5a"
+path="res://.godot/imported/89650_technic_axle_and_pin_connector_2x5_with_2_ball_joint_sockets_closed_sides_closed_axle_holes.obj-b890cb329be3bea78eea5ff50c944eda.mesh"
+
+[deps]
+
+files=["res://.godot/imported/89650_technic_axle_and_pin_connector_2x5_with_2_ball_joint_sockets_closed_sides_closed_axle_holes.obj-b890cb329be3bea78eea5ff50c944eda.mesh"]
+
+source_file="res://assets/models/Parts/89650_technic_axle_and_pin_connector_2x5_with_2_ball_joint_sockets_closed_sides_closed_axle_holes.obj"
+dest_files=["res://.godot/imported/89650_technic_axle_and_pin_connector_2x5_with_2_ball_joint_sockets_closed_sides_closed_axle_holes.obj-b890cb329be3bea78eea5ff50c944eda.mesh", "res://.godot/imported/89650_technic_axle_and_pin_connector_2x5_with_2_ball_joint_sockets_closed_sides_closed_axle_holes.obj-b890cb329be3bea78eea5ff50c944eda.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false

@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://dp6207hwqyt0s"]
+
+[ext_resource type="Material" uid="uid://lvtp6bvbgo6o" path="res://assets/materials/dark_bluish_grey.tres" id="1_j1rj1"]
+[ext_resource type="ArrayMesh" uid="uid://dsxcgo8d7n2kd" path="res://assets/models/Parts/47312_bionicle_head_connector_block_toa_metru.obj" id="2_5nntb"]
+[ext_resource type="Material" uid="uid://ce6gudy23e5bb" path="res://assets/materials/glow_trans_neon_green.tres" id="3_8foh2"]
+[ext_resource type="ArrayMesh" uid="uid://crtpvjejdsr3r" path="res://assets/models/Parts/57536_bionicle_head_connector_block_eye_brain_stalk_short.obj" id="4_5dd06"]
+[ext_resource type="Material" uid="uid://22rbiwa61bjq" path="res://assets/materials/red.tres" id="5_pgme1"]
+[ext_resource type="ArrayMesh" uid="uid://c0dswcaua4m8a" path="res://assets/models/Parts/32062_technic_axle_2l_notched.obj" id="6_isblf"]
+
+[node name="ToaHead" type="Marker3D" unique_id=1529873556]
+
+[node name="47312BionicleHeadConnectorBlockToaMetru" type="MeshInstance3D" parent="." unique_id=513389553]
+transform = Transform3D(-1, 0, -8.742276e-08, 0, 1, 0, 8.742276e-08, 0, -1, 0, 16, 17)
+material_override = ExtResource("1_j1rj1")
+mesh = ExtResource("2_5nntb")
+
+[node name="57536BionicleHeadConnectorBlockEyeBrainStalkShort" type="MeshInstance3D" parent="." unique_id=1740149432]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 0, 37, 15.5)
+material_override = ExtResource("3_8foh2")
+mesh = ExtResource("4_5dd06")
+
+[node name="32062TechnicAxle2lNotched" type="MeshInstance3D" parent="." unique_id=1232557908]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 40.1, 19.5)
+material_override = ExtResource("5_pgme1")
+mesh = ExtResource("6_isblf")

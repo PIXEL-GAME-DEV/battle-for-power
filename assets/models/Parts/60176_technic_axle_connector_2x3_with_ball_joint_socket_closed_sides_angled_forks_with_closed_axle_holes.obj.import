@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://cj8ss6tnu3xsa"
+path="res://.godot/imported/60176_technic_axle_connector_2x3_with_ball_joint_socket_closed_sides_angled_forks_with_closed_axle_holes.obj-78ec5ade422a26376629c795e6e456bc.mesh"
+
+[deps]
+
+files=["res://.godot/imported/60176_technic_axle_connector_2x3_with_ball_joint_socket_closed_sides_angled_forks_with_closed_axle_holes.obj-78ec5ade422a26376629c795e6e456bc.mesh"]
+
+source_file="res://assets/models/Parts/60176_technic_axle_connector_2x3_with_ball_joint_socket_closed_sides_angled_forks_with_closed_axle_holes.obj"
+dest_files=["res://.godot/imported/60176_technic_axle_connector_2x3_with_ball_joint_socket_closed_sides_angled_forks_with_closed_axle_holes.obj-78ec5ade422a26376629c795e6e456bc.mesh", "res://.godot/imported/60176_technic_axle_connector_2x3_with_ball_joint_socket_closed_sides_angled_forks_with_closed_axle_holes.obj-78ec5ade422a26376629c795e6e456bc.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false

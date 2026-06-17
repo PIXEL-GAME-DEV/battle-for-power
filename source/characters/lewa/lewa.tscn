@@ -1,0 +1,76 @@
+[gd_scene format=3 uid="uid://b2wfxkf6fmpcl"]
+
+[ext_resource type="Script" uid="uid://bfnhfi4sn3pse" path="res://source/character.gd" id="1_rc76k"]
+[ext_resource type="PackedScene" uid="uid://l57vng1r0c" path="res://source/characters/lewa/lewa_torso.tscn" id="2_0ymg2"]
+[ext_resource type="PackedScene" uid="uid://dp6207hwqyt0s" path="res://source/characters/toa_head.tscn" id="3_wx0l6"]
+[ext_resource type="PackedScene" uid="uid://blj1otdj35fop" path="res://source/characters/lewa/lewa_limb.tscn" id="4_n6o3i"]
+[ext_resource type="PackedScene" uid="uid://bhfhgp2jirgcq" path="res://source/characters/lewa/lewa_leg.tscn" id="5_j0k6l"]
+[ext_resource type="PackedScene" uid="uid://dcaem73eb2xgi" path="res://source/characters/lewa/lewa_foot.tscn" id="6_1lv6o"]
+[ext_resource type="PackedScene" uid="uid://b6cc5usywfhj" path="res://source/characters/lewa/lewa_forearm.tscn" id="7_wx0l6"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_lo37y"]
+radius = 0.4
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_fdqst"]
+radius = 0.4
+
+[node name="Lewa" type="RigidBody3D" unique_id=1209985700]
+script = ExtResource("1_rc76k")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=2126935710]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+shape = SubResource("CapsuleShape3D_lo37y")
+
+[node name="Root" type="Marker3D" parent="." unique_id=101811978]
+transform = Transform3D(0.004, 0, 0, 0, 0.004, 0, 0, 0, 0.004, 0, 0, 0)
+gizmo_extents = 100.0
+
+[node name="LewaTorso" parent="Root" unique_id=1185602852 instance=ExtResource("2_0ymg2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 397.1, 0)
+
+[node name="ToaHead" parent="Root/LewaTorso" unique_id=1529873556 instance=ExtResource("3_wx0l6")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 89.4, 0)
+
+[node name="LewaThighR" parent="Root/LewaTorso" unique_id=1082945108 instance=ExtResource("4_n6o3i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -40, -69, 0)
+
+[node name="LewaLeg" parent="Root/LewaTorso/LewaThighR" unique_id=1590030153 instance=ExtResource("5_j0k6l")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -120, 0)
+
+[node name="LewaFoot" parent="Root/LewaTorso/LewaThighR/LewaLeg" unique_id=1561402278 instance=ExtResource("6_1lv6o")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -140, 0)
+
+[node name="LewaThightL" parent="Root/LewaTorso" unique_id=1536142 instance=ExtResource("4_n6o3i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 40, -69, 0)
+
+[node name="LewaLeg" parent="Root/LewaTorso/LewaThightL" unique_id=95250078 instance=ExtResource("5_j0k6l")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -120, 0)
+
+[node name="LewaFoot" parent="Root/LewaTorso/LewaThightL/LewaLeg" unique_id=1354117635 instance=ExtResource("6_1lv6o")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -140, 0)
+
+[node name="LewaArmR" parent="Root/LewaTorso" unique_id=2092201184 instance=ExtResource("4_n6o3i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -100, 49, 0)
+
+[node name="LewaForearm" parent="Root/LewaTorso/LewaArmR" unique_id=1336826276 instance=ExtResource("7_wx0l6")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -120, 0)
+
+[node name="LewaArmL" parent="Root/LewaTorso" unique_id=1744677341 instance=ExtResource("4_n6o3i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 100, 49, 0)
+
+[node name="LewaForearm" parent="Root/LewaTorso/LewaArmL" unique_id=1166230488 instance=ExtResource("7_wx0l6")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -120, 0)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1302970726]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+visible = false
+mesh = SubResource("CapsuleMesh_fdqst")
+
+[node name="SpringArm3D" type="SpringArm3D" parent="." unique_id=569344496]
+
+[node name="Camera3D" type="Camera3D" parent="SpringArm3D" unique_id=760018870]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 0, 1.365, -1.195)
+
+[node name="CSGBox3D" type="CSGBox3D" parent="." unique_id=2141198319]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1, 0)
+size = Vector3(2, 2, 2)

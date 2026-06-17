@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dtg08jjc0i1t7"
+path="res://.godot/imported/57563_bionicle_weapon_mahri_matoran_blade.obj-c33f28b2f05b4652dccf0250d927f3f3.mesh"
+
+[deps]
+
+files=["res://.godot/imported/57563_bionicle_weapon_mahri_matoran_blade.obj-c33f28b2f05b4652dccf0250d927f3f3.mesh"]
+
+source_file="res://assets/models/Parts/57563_bionicle_weapon_mahri_matoran_blade.obj"
+dest_files=["res://.godot/imported/57563_bionicle_weapon_mahri_matoran_blade.obj-c33f28b2f05b4652dccf0250d927f3f3.mesh", "res://.godot/imported/57563_bionicle_weapon_mahri_matoran_blade.obj-c33f28b2f05b4652dccf0250d927f3f3.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false

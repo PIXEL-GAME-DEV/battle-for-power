@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://chvq6jxsuxkew"
+path="res://.godot/imported/50898_technic_axle_and_pin_connector_2x7_with_2_ball_joint_sockets_rounded_ends.obj-dbbf89997adeccda2919bc3453591843.mesh"
+
+[deps]
+
+files=["res://.godot/imported/50898_technic_axle_and_pin_connector_2x7_with_2_ball_joint_sockets_rounded_ends.obj-dbbf89997adeccda2919bc3453591843.mesh"]
+
+source_file="res://assets/models/Parts/50898_technic_axle_and_pin_connector_2x7_with_2_ball_joint_sockets_rounded_ends.obj"
+dest_files=["res://.godot/imported/50898_technic_axle_and_pin_connector_2x7_with_2_ball_joint_sockets_rounded_ends.obj-dbbf89997adeccda2919bc3453591843.mesh", "res://.godot/imported/50898_technic_axle_and_pin_connector_2x7_with_2_ball_joint_sockets_rounded_ends.obj-dbbf89997adeccda2919bc3453591843.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false

@@ -1,0 +1,87 @@
+[gd_scene format=3 uid="uid://l57vng1r0c"]
+
+[ext_resource type="Material" uid="uid://lvtp6bvbgo6o" path="res://assets/materials/dark_bluish_grey.tres" id="1_jboo3"]
+[ext_resource type="ArrayMesh" uid="uid://din57ukiwjb73" path="res://assets/models/Parts/53545_bionicle_toa_inika_upper_torso_shoulder_section.obj" id="2_qkyyg"]
+[ext_resource type="Material" uid="uid://cibin2dsmd2n3" path="res://assets/materials/blue.tres" id="3_k6r3s"]
+[ext_resource type="ArrayMesh" uid="uid://by4oibhs6qg1p" path="res://assets/models/Parts/6558_technic_pin_3l_with_friction_ridges.obj" id="4_8vepa"]
+[ext_resource type="ArrayMesh" uid="uid://ca2x8g7rhe2bw" path="res://assets/models/Parts/47306_bionicle_hips_lower_torso_with_2_ball_joints_and_7_tooth_half_gear.obj" id="5_60oca"]
+[ext_resource type="Material" uid="uid://b8225kq22is04" path="res://assets/materials/black.tres" id="6_0cmux"]
+[ext_resource type="ArrayMesh" uid="uid://c04w0pllc7bdd" path="res://assets/models/Parts/2780_technic_pin_with_short_friction_ridges.obj" id="7_pyla2"]
+[ext_resource type="ArrayMesh" uid="uid://doj4r5pgs6udp" path="res://assets/models/Parts/43093_technic_axle_1l_with_pin_and_friction_ridges.obj" id="8_ouqjw"]
+[ext_resource type="Material" uid="uid://c76d5y5h4nfn2" path="res://assets/materials/lime.tres" id="9_62yet"]
+[ext_resource type="ArrayMesh" uid="uid://cj8ss6tnu3xsa" path="res://assets/models/Parts/60176_technic_axle_connector_2x3_with_ball_joint_socket_closed_sides_angled_forks_with_closed_axle_holes.obj" id="10_5klmt"]
+[ext_resource type="ArrayMesh" uid="uid://bt78fe62uh4p5" path="res://assets/models/Parts/53546_bionicle_chest_armor_toa_inika_type_1.obj" id="11_us4nn"]
+[ext_resource type="ArrayMesh" uid="uid://bycbjkw0rw56p" path="res://assets/models/Parts/42003_technic_axle_and_pin_connector_perpendicular_3l_with_2_pin_holes.obj" id="12_ntut2"]
+[ext_resource type="Material" uid="uid://bxvy8x6dylplq" path="res://assets/materials/pearl_light_grey.tres" id="13_oh4di"]
+[ext_resource type="ArrayMesh" uid="uid://c0d3up6e4c048" path="res://assets/models/Parts/53544_bionicle_toa_inika_upper_arm_cover.obj" id="14_qbki1"]
+[ext_resource type="Material" uid="uid://b4v02d5twvgvx" path="res://assets/materials/light_bluish_grey.tres" id="15_ha7pv"]
+[ext_resource type="ArrayMesh" uid="uid://bggewysdu0r0" path="res://assets/models/Parts/4519_technic_axle_3l.obj" id="16_roo1y"]
+[ext_resource type="ArrayMesh" uid="uid://cvspm4jahhhma" path="res://assets/models/Parts/48989_technic_pin_connector_perpendicular_3l_with_4_pins.obj" id="17_madyk"]
+
+[node name="LewaTorso" type="Marker3D" unique_id=1185602852]
+gizmo_extents = 100.0
+
+[node name="53545BionicleToaInikaUpperTorsoShoulderSection" type="MeshInstance3D" parent="." unique_id=1316594301]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 19, -8.7)
+material_override = ExtResource("1_jboo3")
+mesh = ExtResource("2_qkyyg")
+
+[node name="6558TechnicPin3lWithFrictionRidges" type="MeshInstance3D" parent="." unique_id=1344993971]
+transform = Transform3D(-4.371137e-08, 0, -1, 0, 1, 0, 1, 0, -4.371137e-08, 0, -30, -20)
+material_override = ExtResource("3_k6r3s")
+mesh = ExtResource("4_8vepa")
+
+[node name="6558TechnicPin3lWithFrictionRidges2" type="MeshInstance3D" parent="." unique_id=1598349309]
+transform = Transform3D(-4.3711374e-08, 0, -1, 0, 1, 0, 1, 0, -4.3711374e-08, 0, -10, -20)
+material_override = ExtResource("3_k6r3s")
+mesh = ExtResource("4_8vepa")
+
+[node name="47306BionicleHipsLowerTorsoWith2BallJointsAnd7ToothHalfGear" type="MeshInstance3D" parent="." unique_id=223963640]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -39, 0)
+material_override = ExtResource("1_jboo3")
+mesh = ExtResource("5_60oca")
+
+[node name="2780TechnicPinWithShortFrictionRidges" type="MeshInstance3D" parent="." unique_id=36053302]
+transform = Transform3D(-4.3711367e-08, 0, 1, 0, 1, 0, -1, 0, -4.3711367e-08, 40, 9, -10)
+material_override = ExtResource("6_0cmux")
+mesh = ExtResource("7_pyla2")
+
+[node name="2780TechnicPinWithShortFrictionRidges2" type="MeshInstance3D" parent="." unique_id=624452370]
+transform = Transform3D(-4.3711363e-08, 0, 1, 0, 1, 0, -1, 0, -4.3711363e-08, -40, 9, -10)
+material_override = ExtResource("6_0cmux")
+mesh = ExtResource("7_pyla2")
+
+[node name="43093TechnicAxle1lWithPinAndFrictionRidges" type="MeshInstance3D" parent="." unique_id=1465056922]
+transform = Transform3D(-4.3711363e-08, 1, -4.3711363e-08, 0, -4.3711363e-08, -1, -1, -4.3711363e-08, 1.9106853e-15, 0, 49, -10)
+material_override = ExtResource("3_k6r3s")
+mesh = ExtResource("8_ouqjw")
+
+[node name="60176TechnicAxleConnector2x3WithBallJointSocketClosedSidesAngledForksWithClosedAxleHoles" type="MeshInstance3D" parent="." unique_id=1025656051]
+transform = Transform3D(1, 0, 0, 0, -4.3711363e-08, -1, 0, 1, -4.3711363e-08, 0, 69, 0)
+material_override = ExtResource("9_62yet")
+mesh = ExtResource("10_5klmt")
+
+[node name="53546BionicleChestArmorToaInikaType1" type="MeshInstance3D" parent="." unique_id=927597625]
+transform = Transform3D(-1, 0, -8.742273e-08, 0, 1, 0, 8.742273e-08, 0, -1, 0, -12.7, 0.6)
+material_override = ExtResource("9_62yet")
+mesh = ExtResource("11_us4nn")
+
+[node name="42003TechnicAxleAndPinConnectorPerpendicular3lWith2PinHoles" type="MeshInstance3D" parent="." unique_id=279201277]
+transform = Transform3D(1, 0, 0, 0, -1, 8.742275e-08, 0, -8.742275e-08, -1, 0, -30, -40)
+material_override = ExtResource("1_jboo3")
+mesh = ExtResource("12_ntut2")
+
+[node name="53544BionicleToaInikaUpperArmCover" type="MeshInstance3D" parent="." unique_id=1078177181]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -11.5, -49.5)
+material_override = ExtResource("13_oh4di")
+mesh = ExtResource("14_qbki1")
+
+[node name="4519TechnicAxle3l" type="MeshInstance3D" parent="." unique_id=389755537]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -50, -40)
+material_override = ExtResource("15_ha7pv")
+mesh = ExtResource("16_roo1y")
+
+[node name="48989TechnicPinConnectorPerpendicular3lWith4Pins" type="MeshInstance3D" parent="." unique_id=1105763494]
+transform = Transform3D(-4.3711363e-08, -1, 0, 1, -4.3711363e-08, 0, 0, 0, 1, 0, 7.3, -77.6)
+material_override = ExtResource("15_ha7pv")
+mesh = ExtResource("17_madyk")

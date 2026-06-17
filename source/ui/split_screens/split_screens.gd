@@ -138,9 +138,6 @@ func spawn_player(player: int):
 	# add the player to the tree
 	grid_container.add_child(player_node)
 
-	# random spawn position
-	player_node.position = Vector2(randf_range(50, 400), randf_range(50, 400))
-
 
 func delete_player(player: int):
 	player_nodes[player].queue_free()

@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://cov1ner31ste7"
+path="res://.godot/imported/49423_bionicle_toa_metru_chest_cover.obj-f7356ef590090fcf3ac92f782e02b2f2.mesh"
+
+[deps]
+
+files=["res://.godot/imported/49423_bionicle_toa_metru_chest_cover.obj-f7356ef590090fcf3ac92f782e02b2f2.mesh"]
+
+source_file="res://assets/models/Parts/49423_bionicle_toa_metru_chest_cover.obj"
+dest_files=["res://.godot/imported/49423_bionicle_toa_metru_chest_cover.obj-f7356ef590090fcf3ac92f782e02b2f2.mesh", "res://.godot/imported/49423_bionicle_toa_metru_chest_cover.obj-f7356ef590090fcf3ac92f782e02b2f2.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false

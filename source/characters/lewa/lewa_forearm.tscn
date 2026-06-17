@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://b6cc5usywfhj"]
+
+[ext_resource type="Material" uid="uid://lvtp6bvbgo6o" path="res://assets/materials/dark_bluish_grey.tres" id="1_gyjq5"]
+[ext_resource type="ArrayMesh" uid="uid://dbmatj2qfsbo2" path="res://assets/models/Parts/53548_bionicle_inika_leg_lower_section.obj" id="2_mqo8j"]
+
+[node name="LewaForearm" type="Marker3D" unique_id=1336826276]
+gizmo_extents = 100.0
+
+[node name="53548BionicleInikaLegLowerSection" type="MeshInstance3D" parent="." unique_id=1883395848]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -56.3, 0)
+material_override = ExtResource("1_gyjq5")
+mesh = ExtResource("2_mqo8j")

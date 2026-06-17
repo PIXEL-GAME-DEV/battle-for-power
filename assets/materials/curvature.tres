@@ -3,7 +3,7 @@
 [ext_resource type="Shader" uid="uid://ccspysnsg44ba" path="res://source/shaders/curvature.gdshader" id="1_i0oyd"]
 
 [resource]
-render_priority = 1
+render_priority = 0
 shader = ExtResource("1_i0oyd")
-shader_parameter/ridge = 1.0
-shader_parameter/valley = 1.0
+shader_parameter/ridge = 0.249999993675
+shader_parameter/valley = 0.249999993675
