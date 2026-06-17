@@ -1,0 +1,52 @@
+[gd_scene format=3 uid="uid://cnsdqahfws2em"]
+
+[ext_resource type="Script" uid="uid://chgyglsaj2yvr" path="res://source/ui/player_screen/player_screen.gd" id="1_44fu6"]
+[ext_resource type="Script" uid="uid://df1r4141v1bej" path="res://source/ui/rescale_container.gd" id="1_gplfe"]
+[ext_resource type="StyleBox" uid="uid://bbf3ak71d3tq3" path="res://source/ui/player_screen/black_1px_border.tres" id="2_1gp8r"]
+
+[node name="PlayerScreen" type="Control" unique_id=1419142268]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("1_44fu6")
+
+[node name="RescaleContainer" type="Container" parent="." unique_id=1300853032]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("1_gplfe")
+metadata/_custom_type_script = "uid://df1r4141v1bej"
+
+[node name="SubViewportContainer" type="SubViewportContainer" parent="RescaleContainer" unique_id=1975662584]
+texture_filter = 1
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+stretch = true
+
+[node name="SubViewport" type="SubViewport" parent="RescaleContainer/SubViewportContainer" unique_id=1161172901]
+handle_input_locally = false
+use_debanding = true
+size = Vector2i(1280, 720)
+render_target_update_mode = 4
+
+[node name="Camera3D" type="Camera3D" parent="RescaleContainer/SubViewportContainer/SubViewport" unique_id=1335202186]
+
+[node name="Panel" type="Panel" parent="." unique_id=100842199]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = ExtResource("2_1gp8r")

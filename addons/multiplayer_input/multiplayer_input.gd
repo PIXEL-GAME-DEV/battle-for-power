@@ -174,16 +174,16 @@ func set_ui_action_device(device: int):
 	# This is necessary because this function may have messed up the UI Actions
 	# ... on a previous call
 	reset()
-	
+
 	# We are back to default behavior.
 	# So if that's what the caller wants, we're done!
 	if device == -2: return
-	
+
 	# find all ui actions and erase irrelevant events
 	for action in InputMap.get_actions():
 		# ignore non-ui-actions
 		if !is_ui_action(action): break
-		
+
 		if device == -1:
 			# in this context, we want to erase all joypad events
 			for e in InputMap.action_get_events(action):

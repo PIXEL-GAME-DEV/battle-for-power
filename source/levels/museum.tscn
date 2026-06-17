@@ -21,6 +21,9 @@ glow_enabled = true
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_lo37y"]
 radius = 0.4
 
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_fdqst"]
+radius = 0.4
+
 [node name="Museum" type="Node3D" unique_id=59399989]
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1102694050]
@@ -29,7 +32,6 @@ environment = SubResource("Environment_11t87")
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=235687190]
 transform = Transform3D(-0.8660254, -0.43301278, 0.25, 0, 0.49999997, 0.86602545, -0.50000006, 0.75, -0.43301266, 0, 0, 0)
 light_energy = 0.3
-light_angular_distance = 0.5
 shadow_enabled = true
 directional_shadow_blend_splits = true
 directional_shadow_max_distance = 10.0
@@ -42,9 +44,6 @@ size = Vector3(8, 2, 8)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, -2)
 size = Vector3(1, 2, 1)
 
-[node name="Camera3D" type="Camera3D" parent="." unique_id=2002590356]
-transform = Transform3D(1, 0, 0, 0, 0.8660254, 0.5, 0, -0.5, 0.8660254, 0, 2.0084057, 0.8238176)
-
 [node name="ReflectionProbe" type="ReflectionProbe" parent="." unique_id=1431025149]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.3116209, 0.7069449, 0)
 
@@ -53,3 +52,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.3116209, 0.7069449, 0)
 [node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D" unique_id=828312423]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
 shape = SubResource("CapsuleShape3D_lo37y")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="RigidBody3D" unique_id=1746194141]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+mesh = SubResource("CapsuleMesh_fdqst")

@@ -20,14 +20,14 @@ func spawn_player(player: int):
 	var player_node = player_scene.instantiate()
 	player_node.leave.connect(on_player_leave)
 	player_nodes[player] = player_node
-	
+
 	# let the player know which device controls it
 	var device = player_manager.get_player_device(player)
 	player_node.init(player, device)
-	
+
 	# add the player to the tree
 	add_child(player_node)
-	
+
 	# random spawn position
 	player_node.position = Vector2(randf_range(50, 400), randf_range(50, 400))
 

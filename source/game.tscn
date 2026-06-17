@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://dbdwbhxeqk84u"]
+
+[ext_resource type="PackedScene" uid="uid://cfhdq5m0j5ql7" path="res://source/ui/split_screens/split_screens.tscn" id="1_3r74p"]
+[ext_resource type="PackedScene" uid="uid://8j3q300p8gx4" path="res://source/levels/museum.tscn" id="2_ethdu"]
+
+[node name="Game" type="Node" unique_id=1143998075]
+
+[node name="SplitScreens" parent="." unique_id=1311894193 instance=ExtResource("1_3r74p")]
+
+[node name="Museum" parent="." unique_id=59399989 instance=ExtResource("2_ethdu")]
