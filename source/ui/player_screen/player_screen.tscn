@@ -4,6 +4,7 @@
 [ext_resource type="Script" uid="uid://df1r4141v1bej" path="res://source/ui/rescale_container.gd" id="1_gplfe"]
 [ext_resource type="StyleBox" uid="uid://bbf3ak71d3tq3" path="res://source/ui/player_screen/black_1px_border.tres" id="2_1gp8r"]
 [ext_resource type="FontFile" uid="uid://d2vw4x2ianjdo" path="res://assets/fonts/Voya Nui.ttf" id="3_xeslt"]
+[ext_resource type="Script" uid="uid://dei3cp2f7qnla" path="res://source/ui/auto_grid_container.gd" id="5_0j7bb"]
 
 [node name="PlayerScreen" type="Control" unique_id=1419142268]
 layout_mode = 3
@@ -58,3 +59,337 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_styles/panel = ExtResource("2_1gp8r")
+
+[node name="LineEdit" type="LineEdit" parent="." unique_id=1771533416]
+layout_mode = 0
+offset_right = 68.5
+offset_bottom = 31.0
+
+[node name="PanelContainer" type="PanelContainer" parent="." unique_id=1875292974]
+layout_mode = 1
+offset_right = 300.0
+offset_bottom = 300.0
+
+[node name="Naive" type="GridContainer" parent="PanelContainer" unique_id=1699716179]
+visible = false
+layout_mode = 2
+columns = 5
+script = ExtResource("5_0j7bb")
+
+[node name="A" type="Button" parent="PanelContainer/Naive" unique_id=487080509]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "a"
+
+[node name="B" type="Button" parent="PanelContainer/Naive" unique_id=1026321866]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "b"
+
+[node name="C" type="Button" parent="PanelContainer/Naive" unique_id=1722111407]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "c"
+
+[node name="D" type="Button" parent="PanelContainer/Naive" unique_id=1330245231]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "d"
+
+[node name="E" type="Button" parent="PanelContainer/Naive" unique_id=124542367]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "e"
+
+[node name="F" type="Button" parent="PanelContainer/Naive" unique_id=64022473]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "f"
+
+[node name="G" type="Button" parent="PanelContainer/Naive" unique_id=378531987]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "g"
+
+[node name="H" type="Button" parent="PanelContainer/Naive" unique_id=1598304818]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "h"
+
+[node name="I" type="Button" parent="PanelContainer/Naive" unique_id=1480094305]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "i"
+
+[node name="J" type="Button" parent="PanelContainer/Naive" unique_id=1798204142]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "j"
+
+[node name="K" type="Button" parent="PanelContainer/Naive" unique_id=171972604]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "k"
+
+[node name="L" type="Button" parent="PanelContainer/Naive" unique_id=1202393933]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "l"
+
+[node name="M" type="Button" parent="PanelContainer/Naive" unique_id=1272555924]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "m"
+
+[node name="N" type="Button" parent="PanelContainer/Naive" unique_id=1439835222]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "n"
+
+[node name="O" type="Button" parent="PanelContainer/Naive" unique_id=1453875591]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "o"
+
+[node name="P" type="Button" parent="PanelContainer/Naive" unique_id=1843253541]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "p"
+
+[node name="Q" type="Button" parent="PanelContainer/Naive" unique_id=1384480537]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "q"
+
+[node name="R" type="Button" parent="PanelContainer/Naive" unique_id=2141693039]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "r"
+
+[node name="S" type="Button" parent="PanelContainer/Naive" unique_id=1583587810]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "s"
+
+[node name="T" type="Button" parent="PanelContainer/Naive" unique_id=282370223]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "t"
+
+[node name="U" type="Button" parent="PanelContainer/Naive" unique_id=692142881]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "u"
+
+[node name="V" type="Button" parent="PanelContainer/Naive" unique_id=198985778]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "v"
+
+[node name="W" type="Button" parent="PanelContainer/Naive" unique_id=978351038]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "w"
+
+[node name="X" type="Button" parent="PanelContainer/Naive" unique_id=846886375]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "x"
+
+[node name="Y" type="Button" parent="PanelContainer/Naive" unique_id=623466881]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "y"
+
+[node name="Z" type="Button" parent="PanelContainer/Naive" unique_id=1762367637]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "z"
+
+[node name="FrequentInMiddle" type="GridContainer" parent="PanelContainer" unique_id=1114062053]
+layout_mode = 2
+columns = 5
+script = ExtResource("5_0j7bb")
+
+[node name="Q" type="Button" parent="PanelContainer/FrequentInMiddle" unique_id=1777375025]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "q"
+
+[node name="V" type="Button" parent="PanelContainer/FrequentInMiddle" unique_id=990990987]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "v"
+
+[node name="U" type="Button" parent="PanelContainer/FrequentInMiddle" unique_id=1862025158]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "u"
+
+[node name="M" type="Button" parent="PanelContainer/FrequentInMiddle" unique_id=1550580907]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "m"
+
+[node name="K" type="Button" parent="PanelContainer/FrequentInMiddle" unique_id=822095297]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "k"
+
+[node name="B" type="Button" parent="PanelContainer/FrequentInMiddle" unique_id=1504115783]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "b"
+
+[node name="C" type="Button" parent="PanelContainer/FrequentInMiddle" unique_id=784691696]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "c"
+
+[node name="I" type="Button" parent="PanelContainer/FrequentInMiddle" unique_id=451902821]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "i"
+
+[node name="N" type="Button" parent="PanelContainer/FrequentInMiddle" unique_id=966611341]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "n"
+
+[node name="W" type="Button" parent="PanelContainer/FrequentInMiddle" unique_id=227986970]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "w"
+
+[node name="L" type="Button" parent="PanelContainer/FrequentInMiddle" unique_id=1121041948]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "l"
+
+[node name="O" type="Button" parent="PanelContainer/FrequentInMiddle" unique_id=1870366377]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "o"
+
+[node name="E" type="Button" parent="PanelContainer/FrequentInMiddle" unique_id=408453681]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "e"
+
+[node name="T" type="Button" parent="PanelContainer/FrequentInMiddle" unique_id=517589446]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "t"
+
+[node name="S" type="Button" parent="PanelContainer/FrequentInMiddle" unique_id=1553336920]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "s"
+
+[node name="P" type="Button" parent="PanelContainer/FrequentInMiddle" unique_id=854097542]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "p"
+
+[node name="D" type="Button" parent="PanelContainer/FrequentInMiddle" unique_id=1828877366]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "d"
+
+[node name="A" type="Button" parent="PanelContainer/FrequentInMiddle" unique_id=1877044334]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "a"
+
+[node name="H" type="Button" parent="PanelContainer/FrequentInMiddle" unique_id=1567753825]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "h"
+
+[node name="F" type="Button" parent="PanelContainer/FrequentInMiddle" unique_id=95524014]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "f"
+
+[node name="X" type="Button" parent="PanelContainer/FrequentInMiddle" unique_id=799118686]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "x"
+
+[node name="Y" type="Button" parent="PanelContainer/FrequentInMiddle" unique_id=125931023]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "y"
+
+[node name="R" type="Button" parent="PanelContainer/FrequentInMiddle" unique_id=100810813]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "r"
+
+[node name="G" type="Button" parent="PanelContainer/FrequentInMiddle" unique_id=1909787201]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "g"
+
+[node name="J" type="Button" parent="PanelContainer/FrequentInMiddle" unique_id=1864564183]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "j"
+
+[node name="Z" type="Button" parent="PanelContainer/FrequentInMiddle" unique_id=2029369375]
+visible = false
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "z"
