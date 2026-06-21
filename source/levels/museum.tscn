@@ -1,7 +1,5 @@
 [gd_scene format=3 uid="uid://8j3q300p8gx4"]
 
-[ext_resource type="PackedScene" uid="uid://b2wfxkf6fmpcl" path="res://source/characters/lewa/lewa.tscn" id="1_cko76"]
-
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_yv0si"]
 sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
 ground_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
@@ -42,5 +40,3 @@ size = Vector3(1, 2, 1)
 
 [node name="ReflectionProbe" type="ReflectionProbe" parent="." unique_id=1431025149]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.3116209, 0.7069449, 0)
-
-[node name="Lewa" parent="." unique_id=1209985700 instance=ExtResource("1_cko76")]

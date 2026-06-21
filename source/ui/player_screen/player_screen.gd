@@ -8,16 +8,23 @@ var player: int
 var input: DeviceInput
 
 
-@onready var sub_viewport: SubViewport = $RescaleContainer/SubViewportContainer/SubViewport
-@onready var camera_3d: Camera3D = $RescaleContainer/SubViewportContainer/SubViewport/Camera3D
-@onready var label: Label = $Label
+@onready var sub_viewport: SubViewport = %SubViewport
+@onready var camera_3d: Camera3D = %Camera3D
+@onready var player_label: Label = %PlayerLabel
+@onready var label: Label = %Label
+@onready var keypad: GridContainer = %Keypad
 
 
 func _ready():
-	label.text = "Player " + "%s" % player
+	player_label.text = "Player " + "%s" % player
 
 
 func _process(delta: float):
+	var ui_input := input.get_vector("ui_left", "ui_right", "ui_up", "ui_down")
+	var r := keypad.size.length() / 2
+	get_viewport().push_input(InputEventMouseMotion(), )
+	label.offset_transform_position_ratio = (circle_to_square(ui_input) + Vector2.ONE) * 0.5
+
 	var move_input := input.get_vector("move_left", "move_right", "move_forward", "move_backward")
 	var vertical_input := input.get_axis("move_down", "move_up")
 	var turn_input := input.get_axis("turn_left", "turn_right")

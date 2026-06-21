@@ -37,19 +37,192 @@ size_flags_vertical = 3
 stretch = true
 
 [node name="SubViewport" type="SubViewport" parent="RescaleContainer/SubViewportContainer" unique_id=1161172901]
+unique_name_in_owner = true
 handle_input_locally = false
 use_debanding = true
 size = Vector2i(1280, 720)
 render_target_update_mode = 4
 
 [node name="Camera3D" type="Camera3D" parent="RescaleContainer/SubViewportContainer/SubViewport" unique_id=1335202186]
+unique_name_in_owner = true
 
-[node name="Label" type="Label" parent="." unique_id=628159016]
+[node name="PlayerLabel" type="Label" parent="." unique_id=628159016]
+unique_name_in_owner = true
 layout_mode = 0
 offset_right = 40.0
 offset_bottom = 23.0
 theme_override_fonts/font = ExtResource("3_xeslt")
 text = "P1"
+
+[node name="PanelContainer" type="PanelContainer" parent="." unique_id=1616935674]
+visible = false
+layout_mode = 0
+offset_left = 51.0
+offset_top = 48.0
+offset_right = 301.0
+offset_bottom = 348.0
+
+[node name="Keypad" type="GridContainer" parent="PanelContainer" unique_id=127013572]
+unique_name_in_owner = true
+layout_mode = 2
+columns = 5
+
+[node name="Button" type="Button" parent="PanelContainer/Keypad" unique_id=506145869]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "a"
+
+[node name="Button2" type="Button" parent="PanelContainer/Keypad" unique_id=2019459333]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "b"
+
+[node name="Button3" type="Button" parent="PanelContainer/Keypad" unique_id=675523211]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "c"
+
+[node name="Button4" type="Button" parent="PanelContainer/Keypad" unique_id=91121059]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "d"
+
+[node name="Button5" type="Button" parent="PanelContainer/Keypad" unique_id=924463888]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "e"
+
+[node name="Button6" type="Button" parent="PanelContainer/Keypad" unique_id=1905281381]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "f"
+
+[node name="Button7" type="Button" parent="PanelContainer/Keypad" unique_id=1210897834]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "g"
+
+[node name="Button8" type="Button" parent="PanelContainer/Keypad" unique_id=1346143979]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "h"
+
+[node name="Button9" type="Button" parent="PanelContainer/Keypad" unique_id=134271465]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "i"
+
+[node name="Button10" type="Button" parent="PanelContainer/Keypad" unique_id=972224183]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "j"
+
+[node name="Button11" type="Button" parent="PanelContainer/Keypad" unique_id=564056537]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "k"
+
+[node name="Button12" type="Button" parent="PanelContainer/Keypad" unique_id=494101972]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "l"
+
+[node name="Button13" type="Button" parent="PanelContainer/Keypad" unique_id=1389179774]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "m"
+
+[node name="Button14" type="Button" parent="PanelContainer/Keypad" unique_id=542900018]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "n"
+
+[node name="Button15" type="Button" parent="PanelContainer/Keypad" unique_id=519064335]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "o"
+
+[node name="Button16" type="Button" parent="PanelContainer/Keypad" unique_id=1142091701]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "p"
+
+[node name="Button17" type="Button" parent="PanelContainer/Keypad" unique_id=2145803918]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "q"
+
+[node name="Button18" type="Button" parent="PanelContainer/Keypad" unique_id=1973251788]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "r"
+
+[node name="Button19" type="Button" parent="PanelContainer/Keypad" unique_id=2039731427]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "s"
+
+[node name="Button20" type="Button" parent="PanelContainer/Keypad" unique_id=703228181]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "t"
+
+[node name="Button21" type="Button" parent="PanelContainer/Keypad" unique_id=762424688]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "u"
+
+[node name="Button22" type="Button" parent="PanelContainer/Keypad" unique_id=1359635635]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "v"
+
+[node name="Button23" type="Button" parent="PanelContainer/Keypad" unique_id=1938205077]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "w"
+
+[node name="Button24" type="Button" parent="PanelContainer/Keypad" unique_id=1341622801]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "x"
+
+[node name="Button25" type="Button" parent="PanelContainer/Keypad" unique_id=395293260]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "y"
+
+[node name="Button26" type="Button" parent="PanelContainer/Keypad" unique_id=425837828]
+visible = false
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "z"
 
 [node name="Panel" type="Panel" parent="." unique_id=100842199]
 layout_mode = 1
